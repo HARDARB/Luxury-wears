@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+/* ----------------General style start here -------------------------- */
+
+.section{
+    padding: 30px 0;
+    background-color: #dac9b9;
+}
+
+.sectionb{
+    padding: 30px 0;
+}
+
+.sectionc{
+    padding: 30px 0;
+    background-color: #a9907e;
+    color: #dc3545;
+}
+
+.sectiond{
+    padding: 30px 0;
+}
+.sectiond h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sectiond {
+    font-size: 1rem;
+}
+
+.section h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+
+.sectionb h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+}
+
+/* ----------------General style end here -------------------------- */
+
+
+/* ----------------navbar start here -------------------------- */
+
+.w-100 {
+    width: 100%!important;
+    z-index: 9999;
+}
+
+.navbar a{
+    color: black;
+}
+
+
+li a {
+    font-weight: 500;  
+}
+
+li a::after {
+    content: "";
+    width: 100%;
+    display: block; 
+    height: 3px;
+    cursor: pointer;
+}
+
+li  a:hover::after {
+    background-color: #a9907e;
+}
+
+
+.navbar:hover{
+    background-color: white;
+    transition: all 2S ease-in-out;
+    color: white;
+}
+
+
+.logotext {
+    font-weight: 800;
+}
+/* ----------------navbar end here -------------------------- */
+
+
+/* ----------------Hero section start here -------------------------- */
+
+.herosection {
+    height: 100vh;
+    background-color: #dac9b9;
+}
+.herosection .marg {
+    margin-top: 40px;
+}
+
+.herosection .carousel-control-prev, .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    background: none;
+    border: none;
+ }
+
+.herosection .carousel .carousel-indicators {
+    bottom: -15px;
+ }
+
+ .herosection .carousel-indicators .li, .carousel-indicators .li .active {
+    width: 10px;
+    height: 10px;
+    margin: 1px 3px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    position: relative;
+    
+ }
+
+
+.herotexth1{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.herotextp {
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+}
+
+@media (min-width: 576px) { 
+    .herotexth1{
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+  
+}
+/* ----------------Hero section end here -------------------------- */
+
+
+
+/* ----------------Trending products section start here -------------------------- */
+
+
+.trendingproducts .swiper {
+    width: 100%;
+    height: 60vh;
+    
+  }
+
+  .trendingproducts .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5%;
+ 
+  }
+
+
+  .trendingproducts .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .trendingproducts .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: auto;
+    top: var(--swiper-pagination-top,auto);
+    left: 0;
+    width: 100%;
+}
+
+
+@media (min-width: 425px) { 
+
+    .trendingproducts .swiper {
+        width: 100%;
+        height: 80vh;
+        
+      }
+   
+}
+
+@media (min-width: 576px) { 
+ 
+    .trendingproducts {
+        height: 500px;
+        background-color: #dac9b9;
+        
+    }
+    
+ 
+    .trendingproducts .swiper {
+        width: 100%;
+        height: 50vh;
+        
+      }
+ 
+}
+/* ----------------trending products section end here -------------------------- */
+
+
+/* ----------------weeked shoppings section start here -------------------------- */
+
+.weekendimage{
+    margin-top: 50px;
+    
+}
+.weekendtextshoppingh1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.weekendshoppingp {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: .5px;
+}
+
+@media (min-width: 576px) { 
+
+    .weekendshoppingp {
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: .5px;
+    }
+
+     
+}
+
+/* ----------------weeked shoppings section end here -------------------------- */
+
+
+/* ----------------hot deat section start here -------------------------- */
+
+
+.hotdealh1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: brown;
+    color: white;
+    width: 180px;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.hotdealcolor {
+    background-color: #F1DEC9;
+    color: brown;
+    padding: 0 20%;
+}
+.hotdealcolor:hover {
+    padding: 0 25%;
+    box-shadow: 0px -1px 17px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px -1px 17px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 17px -2px rgba(0,0,0,0.75);
+}
+
+.hotdeal a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+}
+/* ----------------Hot deal section end here -------------------------- */
+
+
+/* ----------------luxury wear section start here -------------------------- */
+
+.card-img-overlay{
+    opacity: 0;
+    transition: 1s;
+}
+.card-img-overlay:hover{
+ opacity: 1; 
+ background-color: rgba(0, 0, 0, 0.541);  
+}
+
+
+/* ----------------luxury section end here -------------------------- */
+
+
+
+/* ----------------Customer review section start here -------------------------- */
+
+
+.customersreview .swiper {
+    width: 100%;
+    height: 20vh;
+    
+  }
+
+  .customersreview .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5%;
+ 
+  }
+
+
+  .customersreview .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .customersreview .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: auto;
+    top: var(--swiper-pagination-top,auto);
+    left: 0;
+    width: 100%;
+}
+/* ----------------Customer review section end here -------------------------- */
+
+
+
+/* ----------------Contact us section start here -------------------------- */
+
+ .contactusicon {
+    background-color: #dc3545;
+ }
+ .contactusicon a{
+    text-decoration: none;
+    color: white;  
+ }
+
+
+ .footer:hover {
+   background-color: black;
+   transition: all .5s ease-in-out;
+ }
+
+/* ----------------Contact us section end here -------------------------- */
+
